@@ -1,0 +1,27 @@
+version = 1
+
+test_patterns = ["*/src/**/test/*.py"]
+
+exclude_patterns = ["not/supposed/to/be/ran/*.py"]
+
+[[analyzers]]
+name = "python"
+enabled = true
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_path = "github.com/Cisaw/libacvp"
+
+[[analyzers]]
+name = "docker"
+enabled = true
+
+[[analyzers]]
+name = "ruby"
+enabled = true
